@@ -1,0 +1,7 @@
+matplotlib
+numpy
+certifi==2020.11.8
+click==7.1.2
+elasticsearch==7.10.0
+python-decouple==3.3
+urllib3==1.26.2
