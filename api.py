@@ -111,10 +111,6 @@ if __name__ == '__main__':
     name = 'examind'
     delete_index(name)
     create_index(name)
-    # res1 = es.indices.analyze(index=name, body={
-    #     "text": "اَرّه",
-    # })
-    # print(res1['tokens'])
 
     add_docs(name)
     res = es.search(index=name, size=100, body={
@@ -127,8 +123,3 @@ if __name__ == '__main__':
         }
     })
     print(len(res['hits']['hits']))
-
-    # r = []
-    # for hit in res['hits']['hits']:
-    #     r.append(hit['_source']['Cat_fa'])
-    # pprint(r)
