@@ -70,7 +70,6 @@ def add_docs(index_name):
             '_source': raw_data
         }
         bulk_data.append(op_dict)
-        # print(raw_data['Cat_fa'])
         if i % 100 == 0:
             logging.info(i)
         if i % 100 == 0:
